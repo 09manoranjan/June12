@@ -1,0 +1,45 @@
+.contain{
+width: 2000px;
+height: 770px;
+background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../../assets/background.jfif');
+}
+.container{
+   background-color: gainsboro;
+   width: 30rem;
+   height: 43rem;
+   position: relative;
+   top: 40px;
+   right: 140px;
+   border-radius: 10px;
+}
+.btn-warning{
+   padding: 8px 20px 8px 20px;
+   flex-basis: 25%;
+   width: 80px;
+   height: 80px;
+   float: left;
+   border-radius: 50%;
+   font-size: x-large;    
+   margin: 12px !important;
+}
+.input1{    
+   width: 450px;
+   height: 100px;
+   top: -27px;
+   left: -11px;
+   position: relative;
+   font-size: x-large; 
+}
+
+#keyboard{padding-left: 20px;}
+#ClearBtn{
+   width: -webkit-fill-available;
+   height: 53px;
+   left: -6px;
+   position: relative;
+
+}
+   /* display: flex; 
+    flex-wrap: wrap;
+     width: 400px;
+} */  

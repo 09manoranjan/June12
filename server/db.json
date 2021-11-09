@@ -1,0 +1,44 @@
+{
+  "todo": [
+    {
+      "id": 1,
+      "title": "Washing Bike",
+      "status": "Complete"
+    },
+    {
+      "id": 2,
+      "title": "Travelling Goa",
+      "status": "Incomplete"
+    },
+    {
+      "id": 3,
+      "title": "Playing Cricket",
+      "status": "Incomplete"
+    },
+    {
+      "id": 4,
+      "title": "watching Movie",
+      "status": "Complete"
+    },
+    {
+      "title": "sleeping",
+      "status": "Complete",
+      "id": 5
+    },
+    {
+      "title": "Eating",
+      "status": "Incomplete",
+      "id": 6
+    },
+    {
+      "title": "coding",
+      "status": "Incomplete",
+      "id": 9
+    },
+    {
+      "title": "climbing mountain",
+      "status": "Complete",
+      "id": 10
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<div class="text-center mb-3"><br>
+   <h1>Todo App</h1><br>
+  
+</div><br>
+<div class= "mb-4 mx-5" style="width: 42%;left: 26%;position: relative;">
+   <input type="text" placeholder="Search Task" class="form-control" name="searchText" [(ngModel)]="searchText" (keyup)="searchItem($event.target.value)">
+   {{searchText}}
+</div>
+<div class="todoDiv mx-5 col-sm-5">
+   <input type="text" class="form-control" name="todoVal" [(ngModel)]="defaultVal" placeholder="Add Todo item" #todoVal>&nbsp;&nbsp;
+   <button style="width:20%" class="btn btn-outline-primary" (click)="addTodoItems(todoVal.value)">Add</button>
+</div><br>
+<div class="mx-5 my-5">
+   <table class="table table-hover">
+      <thead>
+         <tr>
+            <th style="width:15%;" (click)="sortData('id')">Sl No.</th>
+            <th style="width:37%;" scope="col">Task</th>
+            <th scope="col">Status</th>
+            <th style="width:18%;">Actions</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor= "let todo of todoList | orderBy: orderByKey :reverse">
+            <td >{{todo.id}}</td>
+            <td style="max-width:50%;word-wrap:break-word;" >{{todo.title}}</td>
+            <td><p [ngStyle]="{'text-decoration': (todo.status == 'Complete') ? 'line-through' : ''}" (click)="changeStatus(todo)">{{todo.status}}</p></td>
+            <td><button class="btn btn-warning" (click)="deleteTodoItem(todo)">Delete</button></td>
+         </tr>
+      </tbody>
+   </table>
+</div>

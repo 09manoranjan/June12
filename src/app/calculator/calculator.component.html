@@ -1,0 +1,18 @@
+<div class="contain">
+
+   <div class="container"><br>
+      <div id="result" class="my-4 mx-3">
+         <input type="text" class="form-control input1" [(ngModel)]="val" #input disabled>
+      </div>
+      <div id="keyboard" class="">
+         <button id=btn{{btn}} class="btn btn-warning" *ngFor="let btn of buttons" (click)="calculate(btn)">{{btn}}</button>
+         <button id="ClearBtn" class="btn btn-danger my-3" (click)="calculate('CLEAR')">CLEAR</button>
+      </div>
+   </div>
+
+
+
+
+
+
+</div>

@@ -1,0 +1,6 @@
+.todoDiv{ display: flex;position: absolute;
+   left: 26%;}
+.table{ position: absolute;width:50%;left:24%;table-layout: fixed}
+.tabelDiv{
+   width:50%;
+}
